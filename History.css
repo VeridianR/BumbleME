@@ -122,6 +122,45 @@ ul li a{
     
 }
 
+@media print {
+    @page {
+        margin: 1cm;
+        margin-top: 1.5cm;
+        margin-bottom: 2cm;
+        size: A4;
+
+    }
+    .navbar, .Pictures {
+        display: none;
+      }
+
+      .HEADING{
+        position:absolute;
+        top: 10px;
+        scale: 0.7;
+        left: 0;
+        width: 100%;
+        padding: 0%;
+        background-color: transparent;
+      }
+      .container{
+        background-image: none;
+      }
+
+      .textHistory{
+        background-color: transparent;
+        position: absolute;
+        top: 140px;
+        width: 80%;
+        
+      }
+      .textHistory h1{
+        margin-top: 100px;
+        page-break-inside: always;
+        
+      }
+
+}
 
 
 

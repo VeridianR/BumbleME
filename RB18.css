@@ -147,7 +147,6 @@ h2{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     font-size: 30px;
-    text-decoration-line: underline;
     text-decoration-thickness: 10%;
     color: white;
 }
@@ -246,5 +245,54 @@ p{
     text-decoration-thickness: 10%;
     color: rgb(0, 0, 0);
     padding-bottom: 3px;
+
+}
+
+@media print {
+    @page {
+        margin: 0.5cm;
+        size: A4;
+      }
+    .navbar,.dots,.images.slider  {
+        display: none;
+      }
+      h1{
+        top: 10px;
+        padding-left: 20px
+      }
+      .backwingbox{
+        top: 150px;
+        margin: auto;
+        margin-left: 20px;
+        background-color: white;
+        border: solid rgb(0, 0, 0) 2px;
+      }
+      .frontwingbox{
+        top: 650px;
+        margin: auto;
+        margin-left: 20px;
+        background-color: white;
+        border: solid rgb(0, 0, 0) 2px;
+        
+        
+      }
+      .WingletsAndCovers{
+        top: 150px;
+        margin: auto;
+        margin-right: 20px;
+        background-color: white;
+        border: solid rgb(0, 0, 0) 2px;
+      }
+      .statBlock{
+        background-color: white;
+        color: black;
+        border: solid rgb(0, 0, 0) 2px;
+      }
+      p{
+        color: black;
+      }
+      h2{
+        color: black;
+      }
 
 }

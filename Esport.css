@@ -129,3 +129,35 @@ p{
     font-weight: bold;
 }
 
+@media print {
+    @page {
+        margin: 1cm;
+        margin-top: 1.5cm;
+        margin-bottom: 2cm;
+        size: A4;
+
+    }
+    .Box1 img,.Box2 img, .navbar{
+        display: none;
+      }
+      .Heading{
+        background-color: transparent;
+        top: 5;
+      }
+      .Box1{
+        padding: 0;
+        position: absolute;
+        left: 10px;
+        top: 300px;
+      }
+      .Box2{   
+        padding: 0;
+        position: absolute;
+        left: 10px;
+        top: 650px;;
+      }
+      p{
+        background-color: white;
+        color:black;
+      }
+    }
